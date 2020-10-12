@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-12T11:08:14.508Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="D6er3t7aqLMAmxiTNR9w" version="13.7.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-12T11:17:33.778Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="BMdWAbZH_zxLY-cS7G1S" version="13.7.9" type="github">
   <diagram id="SrLfzSh-F0n5Bj2lNEps" name="Page-1">
     <mxGraphModel dx="2249" dy="882" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -16,7 +16,7 @@
         <mxCell id="uO1HGl1KxB9mnKmZrk5d-10" value="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;FileSystem(OpenResty存储的源文件&lt;/font&gt;）&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="120" y="640" width="120" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="uO1HGl1KxB9mnKmZrk5d-11" value="&lt;div&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;LogBatchCompressTool&lt;/font&gt;&lt;br style=&quot;font-size: 15px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=top;fontSize=15;" parent="1" vertex="1">
+        <mxCell id="uO1HGl1KxB9mnKmZrk5d-11" value="&lt;div&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;batch_datasensor_log.sh&lt;/font&gt;&lt;br style=&quot;font-size: 15px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=top;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="280" y="440" width="160" height="200" as="geometry" />
         </mxCell>
         <mxCell id="uO1HGl1KxB9mnKmZrk5d-12" value="&lt;p style=&quot;margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;第一步&lt;/span&gt;&lt;span style=&quot;font-family: calibri; font-size: 12px;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;读取文件路径&lt;/span&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
@@ -85,14 +85,20 @@
             <mxPoint x="599.5" y="750" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Vjnd3Iz-NEyt5eiJnFaD-2" value="&lt;b&gt;监听读取数据&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
-          <mxGeometry x="180" y="460" width="90" height="20" as="geometry" />
+        <mxCell id="Vjnd3Iz-NEyt5eiJnFaD-2" value="&lt;b&gt;读取数据&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="195" y="460" width="60" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Vjnd3Iz-NEyt5eiJnFaD-3" value="&lt;b&gt;压缩&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
           <mxGeometry x="230" y="580" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Vjnd3Iz-NEyt5eiJnFaD-4" value="&lt;b&gt;存储&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
           <mxGeometry x="460" y="590" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Vjnd3Iz-NEyt5eiJnFaD-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.463;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Vjnd3Iz-NEyt5eiJnFaD-5" target="uO1HGl1KxB9mnKmZrk5d-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vjnd3Iz-NEyt5eiJnFaD-5" value="crontab(定时任务)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="294" y="230" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
